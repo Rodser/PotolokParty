@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "vKkFAqJ4ZakZaPB/CnBppR7/sJkX6AepyVuh+rDjI0R3iJuMMSK3Rv9axb4onQi14JC2oUjbAFpOvwfCEt/A3w==",
+  "success": true,
+  "projectFilePath": "C:\\Code\\PotolokParty\\PotolokParty\\PotolokParty.iOS\\PotolokParty.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Rdnv\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Rdnv\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Rdnv\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\Rdnv\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

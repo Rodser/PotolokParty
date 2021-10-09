@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:vm="clr-namespace:PotolokParty.ViewModels"
+             x:Class="PotolokParty.Pages.ApplicationPage">
+    <ContentPage.BindingContext>
+        <vm:ApplicationViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Application"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            
+            <Label Text="{Binding Address}"/>
+
+            <CarouselView ItemsSource="{Binding Ceilings}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout >
+                            <Label Text="{Binding Square}"/>
+                            <Label Text="{Binding Perimeter}"/>
+                            <Label Text="{Binding Amount}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

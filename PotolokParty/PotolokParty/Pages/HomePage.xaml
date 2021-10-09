@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:vm="clr-namespace:PotolokParty.ViewModels"
+             x:Class="PotolokParty.Pages.HomePage">
+    
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Potolok Party!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <CarouselView ItemsSource="{Binding News}" 
+                          EmptyView="Empty" 
+                          BackgroundColor="LightYellow">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding .}"/>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            
+            <ScrollView>                
+            <CollectionView ItemsSource="{Binding Applications}" 
+                            SelectedItem="{Binding SelectApplicationCommand}"
+                            BackgroundColor="Gray">
+                <CollectionView.ItemTemplate>                    
+                    <DataTemplate>
+                        <StackLayout>                            
+                            <Label Text="{Binding Address}"/>
+                            <Label Text="{Binding Amount}"/>
+                            <Label Text="{Binding Date}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                </CollectionView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

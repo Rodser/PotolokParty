@@ -1,0 +1,16 @@
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\PotolokParty.csproj.AssemblyReference.cache
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\PotolokParty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\PotolokParty.AssemblyInfoInputs.cache
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\PotolokParty.AssemblyInfo.cs
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\PotolokParty.csproj.CoreCompileInputs.cache
+C:\Code\PotolokParty\PotolokParty\PotolokParty\bin\Debug\netstandard2.0\PotolokParty.deps.json
+C:\Code\PotolokParty\PotolokParty\PotolokParty\bin\Debug\netstandard2.0\PotolokParty.dll
+C:\Code\PotolokParty\PotolokParty\PotolokParty\bin\Debug\netstandard2.0\ref\PotolokParty.dll
+C:\Code\PotolokParty\PotolokParty\PotolokParty\bin\Debug\netstandard2.0\PotolokParty.pdb
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\Pages\ApplicationPage.xaml.g.cs
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\PotolokParty.dll
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\ref\PotolokParty.dll
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\PotolokParty.pdb
+C:\Code\PotolokParty\PotolokParty\PotolokParty\obj\Debug\netstandard2.0\Pages\HomePage.xaml.g.cs
