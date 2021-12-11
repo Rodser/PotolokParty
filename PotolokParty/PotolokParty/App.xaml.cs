@@ -1,19 +1,19 @@
-﻿using PotolokParty.Pages;
-using PotolokParty.Service;
+﻿using PotolokParty.Data;
+using PotolokParty.Pages;
 using Xamarin.Forms;
 
 namespace PotolokParty
 {
     public partial class App : Application
     {
-        internal static RepositoryAlpha repository;
+        public static Repository Repository { get; private set; }
+
         public App()
         {
-            repository = new RepositoryAlpha();
+            Repository = new Repository(new RestService());
 
             InitializeComponent();
-
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new HomePage());            
         }
 
         protected override void OnStart()

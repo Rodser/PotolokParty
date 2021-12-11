@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PotolokParty.Pages.ApplicationPage.xaml", "Pages/ApplicationPage.xaml", typeof(global::PotolokParty.Pages.ApplicationPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PotolokParty.Pages.ApplicationPage.xaml", "Pages/ApplicationPage.xaml", typeof(global::PotolokParty.Pages.OrderPage))]
 
 namespace PotolokParty.Pages {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\ApplicationPage.xaml")]
-    public partial class ApplicationPage : global::Xamarin.Forms.ContentPage {
+    public partial class OrderPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ApplicationPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(OrderPage));
         }
     }
 }

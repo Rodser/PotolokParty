@@ -2,42 +2,95 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:vm="clr-namespace:PotolokParty.ViewModels"
-             x:Class="PotolokParty.Pages.HomePage">
-    
+             x:Class="PotolokParty.Pages.HomePage"
+             Title="Welcome to Potolok Party!"
+             BackgroundColor="Gray">
+
     <ContentPage.BindingContext>
         <vm:HomeViewModel/>
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Potolok Party!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <CarouselView ItemsSource="{Binding News}" 
-                          EmptyView="Empty" 
-                          BackgroundColor="LightYellow">
-                <CarouselView.ItemTemplate>
-                    <DataTemplate>
-                        <Label Text="{Binding .}"/>
-                    </DataTemplate>
-                </CarouselView.ItemTemplate>
-            </CarouselView>
-            
-            <ScrollView>                
-            <CollectionView ItemsSource="{Binding Applications}" 
-                            SelectedItem="{Binding SelectApplicationCommand}"
-                            BackgroundColor="Gray">
-                <CollectionView.ItemTemplate>                    
-                    <DataTemplate>
-                        <StackLayout>                            
-                            <Label Text="{Binding Address}"/>
-                            <Label Text="{Binding Amount}"/>
-                            <Label Text="{Binding Date}"/>
-                        </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-                </CollectionView>
-            </ScrollView>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Grid HeightRequest="300">
+                    <CarouselView ItemsSource="{Binding News}" 
+                              Loop="False">
+                        <CarouselView.EmptyViewTemplate>
+                            <DataTemplate>
+                                <Frame HasShadow="True"
+                       BackgroundColor="Green"
+                       CornerRadius="6"
+                       Margin="10"
+                       HeightRequest="70"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+                                    <StackLayout>
+                                        <Label Text="Empty"
+                               FontAttributes="Bold"
+                                               TextColor="Beige"
+                               FontSize="Large"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                                    </StackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CarouselView.EmptyViewTemplate>
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>                                  
+                                    <Frame HasShadow="True"
+                       BackgroundColor="#4818C8"
+                       CornerRadius="12"
+                       Margin="10"
+                       HeightRequest="70"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand">
+                                        <StackLayout>
+                                            <Label Text="{Binding .}"
+                               FontAttributes="Bold"
+                                               TextColor="Beige"
+                               FontSize="Large"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                                        </StackLayout>
+                                    </Frame>
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+                    </CarouselView>
+                </Grid>
+
+                    <ListView x:Name="listView" BackgroundColor="DarkCyan" ItemsSource="{Binding Orders}">
+                        
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>                                
+                            <Frame HasShadow="True" 
+                                   BackgroundColor="LightSeaGreen"
+                                   BorderColor="green"
+                                   CornerRadius="5"
+                       Margin="20"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Center">
+                                <StackLayout>
+                                    <Label Text="{Binding Address}"
+                               FontAttributes="Bold"
+                               FontSize="Large"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                                    <Label Text="{Binding Amount}"
+                               HorizontalOptions="Center" />
+                                    <Label Text="{Binding Date}"
+                               FontAttributes="Italic"
+                               HorizontalOptions="Center"
+                               MaxLines="5"
+                               LineBreakMode="TailTruncation" />
+                                </StackLayout>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using PotolokParty.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace PotolokParty.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ApplicationPage : ContentPage
+    public partial class OrderPage : ContentPage
     {
-        public ApplicationPage()
-        {
-            InitializeComponent();
-        }
-    }
+        public OrderPage(bool isNew = false)
+		{
+			InitializeComponent();
+			BindingContext = new OrderViewModel(this.Navigation, isNew);
+		}
+	}
 }

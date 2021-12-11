@@ -3,7 +3,7 @@
     /// <summary>
     /// Адрес Заявки
     /// </summary>
-    internal class Address
+    public class Address
     {
         /// <summary>
         /// Населенный пункт

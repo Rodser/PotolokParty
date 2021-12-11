@@ -1,6 +1,6 @@
 ﻿namespace PotolokParty.Models
 {
-    internal enum Status
+    public enum Status
     {
         processing,
         active,

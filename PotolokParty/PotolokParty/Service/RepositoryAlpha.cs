@@ -5,15 +5,15 @@ namespace PotolokParty.Service
 {
     internal class RepositoryAlpha
     {
-        public IList<Application> Applications { get; }
+        public IList<Order> Applications { get; }
         public IList<string> News { get; set; }
 
         public RepositoryAlpha()
         {
             News = new List<string> { "News! News! News!", "Today Open", "Add View for News"};
-            Applications = new List<Application>
+            Applications = new List<Order>
             {
-                new Application
+                new Order
                 {
                     Client = new Client
                     {
@@ -38,7 +38,7 @@ namespace PotolokParty.Service
                         new Ceiling { Amount = 12000, Square = 34, Perimeter = 86 }
                     }
                 },
-                new Application
+                new Order
                 {
                     Client = new Client
                     {

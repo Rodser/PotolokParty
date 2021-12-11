@@ -3,7 +3,7 @@
     /// <summary>
     /// Элемент Потолка
     /// </summary>
-    internal class Item
+    public class Item
     {
         public int Id { get; set; }
         public string Name { get; set; }

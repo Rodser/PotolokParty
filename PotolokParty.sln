@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotolokParty.Android", "Pot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotolokParty.iOS", "PotolokParty\PotolokParty.iOS\PotolokParty.iOS.csproj", "{4593B3F7-1990-4BA8-B3D4-133A9ACB8538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotolokParty", "PotolokParty\PotolokParty\PotolokParty.csproj", "{6C8C25DC-68F5-43B2-96A9-4187C26BDF7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PotolokParty", "PotolokParty\PotolokParty\PotolokParty.csproj", "{6C8C25DC-68F5-43B2-96A9-4187C26BDF7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PotolokPartyAPI", "PotolokPartyAPI\PotolokPartyAPI.csproj", "{CD02743C-D007-4874-AF4A-3AE4EBAFA264}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,30 @@ Global
 		{6C8C25DC-68F5-43B2-96A9-4187C26BDF7E}.Release|x86.ActiveCfg = Release|Any CPU
 		{6C8C25DC-68F5-43B2-96A9-4187C26BDF7E}.Release|x86.Build.0 = Release|Any CPU
 		{6C8C25DC-68F5-43B2-96A9-4187C26BDF7E}.Release|x86.Deploy.0 = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|ARM.Build.0 = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|x64.Build.0 = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Debug|x86.Build.0 = Debug|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|ARM.Build.0 = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|iPhone.Build.0 = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|x64.ActiveCfg = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|x64.Build.0 = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|x86.ActiveCfg = Release|Any CPU
+		{CD02743C-D007-4874-AF4A-3AE4EBAFA264}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

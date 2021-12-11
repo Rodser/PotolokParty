@@ -6,7 +6,7 @@ namespace PotolokParty.Models
     /// <summary>
     /// Потолок
     /// </summary>
-    internal class Ceiling
+    public class Ceiling
     {
         public int id { get; set; }
         public double Square { get; set; }
